@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lazer Engine</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    </head>
+    <style>
+    </style>
+    <script src="script.js">
+    </script>
+    <body id="body" style="background-color: white;">
+        <input type="button" value="login" onclick="showlogin()"></input>
+        <dialog style="display: none; position: fixed; font-family: Verdana ;" id="dialog" >
+            <button onclick="closedialog()">X</button>
+            <center>
+                Welcome back!<br><br>
+                <form>
+                    <input type="text" placeholder="Username" id="Username" required><br><br>
+                    <input type="submit" value="Login!" onclick="login()">
+                </form>
+            </center>
+        </dialog>
+        <center>
+            <h1 style="color: red;font-family: Verdana;">Lazer Engine</h1>
+            <input type="text" id="search" placeholder="Search Google" style="width: 500px; height: 30px;font-family: Verdana;" spellcheck="true" oninput="gopls()" ><br><br>
+            <input type="button" value="Search" onclick="getQuery()" style="padding: 5px; font-family: Verdana;" id="GO">
+            <a href="https://bit.ly/3tw23OL"><input type="button" value="Surprise me" style="padding: 5px; font-family: Verdana;" ></a>
+        </center>
+        <div id="Sites"><center>
+            <h3 style="font-family:Verdana;">Suggested sites</h3>
+            <a href="https://www.youtube.com/" target="_Blank"><input type="image" src="YT.png" alt="YouTube" ></input></a>
+            <a href="https://www.mail.yahoo.com/" target="_Blank"><input type="image" src="Y!.png" alt="Yahoo!" ></input></a>
+            <a href="https://www.facebook.com/" target="_Blank"><input type="image" src="FC.png" alt="Facebook" ></input></a>
+            <a href="https://www.instagram.com/" target="_Blank"><input type="image" src="INS.png" alt="Instagram" ></input></a>
+        </center></div>
+    <div id="body">
+        <hr>
+        <h2 id="new" style="font-family:Verdana;">News</h2>
+        <iframe src="http://feeds.bbci.co.uk/news/world/rss.xml" width="75%" height="550px"></iframe>
+        <a target="_blank" href="https://www.booked.net/weather/manama-18509"><img src="https://w.bookcdn.com/weather/picture/2_18509,18114,18103_1_1_137AE9_250_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w209&anc_id=93364"  height="550px" width="24%"alt="booked.net"/></a>
+        <br>
+    </div>
+        <center>
+            <h3>Support</h3>
+                <div id="support-light" style="display:block;">
+                    <hr>
+                    <iframe src="https://discord.com/widget?id=632573189456658438&theme=light" width="350" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </div>
+            <div id="support-dark" style="display:none;">
+                <hr>
+                <iframe src="https://discord.com/widget?id=632573189456658438&theme=dark" width="350" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+            </div>
+
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+            <div class="elfsight-app-f03c8eb1-207d-4490-aa1c-881b25ad09b8"></div>
+
+        </center>
+
+            <button id="dark" onclick="dark()" style="display:block;font-family:Verdana;">Dark Theme!</button>
+
+            <button id="light" onclick="light()" style="display:none;font-family:Verdana;">Light Theme!</button>
+
+        </button>
+
+    </body>
+
+</html>
